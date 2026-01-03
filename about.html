@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Fazaia Degree College Peshawar</title>
+
+<style>
+    *{
+        
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body{
+        background-color: #f2f4f6;
+        color: #333;
+        line-height: 1.2;
+    }
+
+    /* Header */
+    .header{
+        background-color: #1e73be;
+        color: #fff;
+        padding: 5px 0;
+        text-align: center;
+        font-size: 28px;
+        
+    }
+ 
+    .head1{
+        font-size: 36px;
+    }
+    .header h1{
+        font-size: 36px;
+    }
+
+    .header-menu{
+        background-color: #dedfe0;
+    }
+    /* Container */
+    .container{
+        width: 90%;
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+
+    /* Section Title */
+    .section-title{
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #1e73be;
+        position: relative;
+    }
+
+    .section-title::after{
+        content: "";
+        width: 80px;
+        height: 3px;
+        background-color: #ff9800;
+        display: block;
+        margin: 10px auto;
+    }
+
+    /* Intro Section */
+    .intro{
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .intro img{
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        object-fit: cover;
+    }
+
+    .intro-text{
+        width: 50%;
+    }
+
+    .intro-text p{
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    /* Timeline Section */
+    .timeline{
+        background-color: #fff;
+        padding: 40px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        margin-bottom: 50px;
+    }
+
+    .timeline ul{
+        list-style: none;
+    }
+    .timeline li{
+        margin-bottom: 15px;
+        padding-left: 20px;
+        border-left: 3px solid #1e73be;
+    }
+
+    /* Mission / Vision */
+    .mv-section{
+        display: flex;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .mv-card{
+        background-color: #fff;
+        padding: 30px;
+        flex: 1;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .mv-card h3{
+        margin-bottom: 10px;
+        color: #1e73be;
+        font-size: 22px;
+    }
+
+    /* PAF Section */
+    .paf-section{
+        background-color: #1e73be;
+        color: #fff;
+        padding: 40px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+    .paf-section h2{
+        margin-bottom: 15px;
+    }
+
+    .paf-section p{
+        font-size: 18px;
+    }
+
+    /* Gallery */
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .gallery img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Footer */
+    .footer{
+        background-color: #1e73be;
+        text-align: center;
+        padding: 20px;
+        color: #fff;
+        margin-top: 40px;
+    }
+
+    /* Responsive */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+
+            .about-image {
+                order: -1;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+
+
+
+        .width-100{
+    width: 100%;
+    float: left;
+}
+.container{
+    width: 1500px;
+    margin: 0px auto;
+}
+.top-header{
+    background-color: #55B8EF;
+    padding: 5px 0px;
+    border-bottom: 1px solid #3131315e;
+}
+.newslist{
+    background-color: #fff;
+    color: red;
+    padding: 6px;
+    font-size: 20px;
+}
+.headquote{
+    font-size: 18px;
+    width: 80%;
+    color: #fff;
+}
+
+.header-menu{
+    position: relative;
+    box-shadow: 0px 2px 5px 0px #00000036;
+}
+.logo{
+width: fit-content;
+float: left;
+height: 150px;
+}
+
+.img{
+    width: 170px;
+    height: 150px;
+}
+.main-menu{
+    list-style: none;
+    float: right;
+    margin-top: 50px;
+}
+
+.main-menu a{
+    font-weight: 500;
+    font-size: 25px;
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+.main-menu li{
+    float: left;
+    padding: 12px 15px;
+}
+</style>
+</head>
+<body>
+    
+<!--Nav Bar-->
+ <div class="width-100 top-header">
+        <div class="container">
+            <div class="width-100">
+                <b class="newslist">NEWS :</b>
+                <marquee class="headquote">MY COLLEGE: INTELLIGENCE PLUS CUROSITY THAT IS THE ROOT OF TRUE EDUCATION.
+                </marquee>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="width-100 header-menu">
+        <div class="container">
+            <div class="logo">
+                <img class="img" src="./logo 2.png" alt="">
+            </div>
+            <ul class="main-menu">
+                <li> <a href="./index.html">HOME</a></li>
+                <li><a href="./about.html">ABOUT US</a></li>
+                <li><a href="./admission.html">ADMISSION</a></li>
+                <li><a href="./gallary.html">GALLERY</a></li>
+                <li><a href="./noticeboard.html">NOTICE BOARD</a></li>
+                <li><a href="./contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!-- Header -->
+<div class="header">
+    <h1 class="head1">About Us</h1>
+    <p>Fazaia Degree College Peshawar</p>
+</div>
+
+<div class="container">
+
+    <!-- Intro Section -->
+    <h2 class="section-title">Who We Are</h2>
+    <div class="intro">
+        <img src="./8.jpeg" alt="College Campus">
+        <div class="intro-text">
+            <p>
+                Fazaia Degree College Peshawar is one of the leading educational institutions operating under the
+                prestigious Pakistan Air Force (PAF). Known for excellence, discipline, and holistic development,
+                the college stands as a symbol of quality education in the region.
+            </p>
+            <p>
+                The college has progressed through multiple stages of academic evolution, becoming a respected
+                degree-awarding institution that serves both PAF families and civilians.
+            </p>
+        </div>
+    </div>
+
+    <!-- History Timeline -->
+    <h2 class="section-title">Our Journey</h2>
+    <div class="timeline">
+        <ul>
+            <li><strong>1960:</strong> Established as Peshawar Model School.</li>
+            <li><strong>1967:</strong> Upgraded to Intermediate Level.</li>
+            <li><strong>1981:</strong> Achieved Degree College Status.</li>
+            <li><strong>Today:</strong> A premier institution offering modern education from intermediate to bachelor's levels.</li>
+        </ul>
+    </div>
+
+    <!-- Mission & Vision -->
+    <h2 class="section-title">Our Vision & Mission</h2>
+    <div class="mv-section">
+        <div class="mv-card">
+            <h3>Our Vision</h3>
+            <p>
+                To become a center of educational excellence where discipline, integrity, and innovation
+                empower students to become future leaders.
+            </p>
+        </div>
+
+        <div class="mv-card">
+            <h3>Our Mission</h3>
+            <p>
+                To provide high-quality education in a disciplined and intellectually stimulating environment,
+                focusing on character building, academic excellence, and leadership development.
+            </p>
+        </div>
+    </div>
+
+    <!-- PAF Section -->
+    <div class="paf-section">
+        <h2>Affiliation with Pakistan Air Force</h2>
+        <p>
+            Fazaia Degree College Peshawar is part of the Fazaia chain of educational institutions operated by the Pakistan
+            Air Force. These institutions are known for their strong academic standards, discipline, and commitment to
+            producing responsible citizens who uphold values of integrity, respect, and service to the nation.
+        </p>
+    </div>
+
+    <!-- Gallery -->
+    <h2 class="section-title">Campus Life</h2>
+    <div class="gallery">
+        <img src="./1.jpeg" alt="">
+        <img src="./2.jpeg" alt="">
+        <img src="./4.jpeg" alt="">
+        <img src="./6.jpeg" alt="">
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    © 2025 Fazaia Degree College Peshawar. All Rights Reserved.
+</div>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body, html{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(229, 233, 233);
+}
+
+.width-100{
+    width: 100%;
+}
+
+/* ===== TOP NEWS BAR ===== */
+.top-header{
+    background-color: #01CFFE;   /* Updated color */
+    padding: 8px 0;
+}
+
+.news-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.newslist{
+    background-color: #ffffff;
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 6px 12px;
+    margin-bottom: 0;
+}
+
+.headquote{
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* ===== NAVBAR ===== */
+.header-menu{
+    background-color: #01CFFE;   /* Updated color */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.cont1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 10px 15px;
+}
+
+/* Logo */
+.logo{
+    background-color: #01CFFE ;
+    padding: 5px 10px;
+    border-radius: 1px;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+    display: block;
+    background-color: #01CFFE;
+    mix-blend-mode: multiply;
+}
+
+.main-menu{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu li a{
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 8px 10px;
+    transition: 0.3s;
+}
+
+.main-menu li a:hover{
+    color: #01CFFE;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+/* OTHER CLASSES REMAIN SAME */
+.slider-width{
+    width: 100%;
+    height: 770px;
+}
+
+.margin-top-50{
+    margin-top: 50px;
+}
+
+.h{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-top: 10px;
+    margin-bottom: 60px;
+}
+
+.width-33{
+    width: 50%;
+    float: left;
+    height: 800px;
+}
+
+.latest-news{
+    margin-left: 0px;
+    margin-right: 100px;
+    background-color: #fff;
+    padding: 20px;
+    height: 650px;
+    margin-bottom: 30px;
+    width: 700px;
+}
+
+.heading-section{
+    width: 100%;
+    float: left;
+    border-bottom: 1px solid #cfcfcf;
+    padding-bottom: 0px;
+    margin: 0px;
+    margin-bottom: 15px;
+    border: 1px solid #cfcfcf;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: #00aed9;
+    color: #fff;
+}
+
+.head-title{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.latest-news-ul{
+    padding: 0px;
+    list-style: none;
+    line-height: 90px;
+}
+
+.Event-list{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    padding: 20px;
+    height: 650px;
+    margin-bottom: 30px;
+    width: 700px;
+}
+
+.upcoming-event-list{
+    padding: 0px;
+    list-style: none;
+}
+
+.upcoming-event-list li{
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.event-date{
+    background-color: #03a9f4;
+    width: 80px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.gallary{
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 50px;
+}
+
+.gal{
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    margin-bottom: 100px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-dark);
+    color: var(--white);
+    padding: 60px 0 0px;
+    height: 500px;
+}
+
+.footer-content {
+    background-color: #01CFFE;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 0px;
+    padding-top: 30px;
+    padding-left: 18px;
+    height: 370px;
+    font-size: 20px;
+    color: white;
+    width: 101%;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 14px;
+}
+
+.ft{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

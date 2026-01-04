@@ -12,6 +12,70 @@
         body {
             background-color: #f5f8ff;
         }
+
+        .width-100{
+            width: 100%;
+        }
+
+        .top-header{
+            background-color: #55B8EF;
+            padding: 6px 0;
+        }
+
+        .newslist{
+            background-color: #fff;
+            color: red;
+            padding: 6px 10px;
+            font-size: 16px;
+        }
+
+        .headquote{
+            font-size: 16px;
+            color: #fff;
+        }
+
+        /* ===== NAVBAR ===== */
+        .header-menu{
+            background: #ffffff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        .cont1{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            padding: 10px 15px;
+        }
+
+        .logo img{
+            width: 150px;
+            height: auto;
+        }
+
+        .main-menu{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .main-menu li a{
+            text-decoration: none;
+            font-size: 23px;
+            font-weight: 600;
+            color: #004e9a;
+            padding: 8px 10px;
+            transition: 0.3s;
+        }
+
+        .main-menu li a:hover{
+            color: #ffffff;
+            background: #004e9a;
+            border-radius: 5px;
+        }
+
         .notice-card {
             border-left: 6px solid #3381f6;
             transition: 0.3s;
@@ -29,60 +93,91 @@
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand fw-bold fs-4" href="#">FAZAIA DEGREE COLLEGE PESHAWAR</a>
-        </div>
-    </nav>
+<!-- TOP HEADER -->
+<div class="width-100 top-header">
+    <div class="container">
+        <b class="newslist">NEWS :</b>
+        <marquee class="headquote">
+            MY COLLEGE: INTELLIGENCE PLUS CURIOSITY THAT IS THE ROOT OF TRUE EDUCATION.
+        </marquee>
+    </div>
+</div>
 
-    <!-- Page Title -->
-    <div class="container mt-4">
-        <h1 class="text-center fw-bold text-primary">📢 Notice Board</h1>
-        <p class="text-center text-muted">Latest updates, announcements & important notifications</p>
+<!-- NAVBAR -->
+<div class="width-100 header-menu">
+    <div class="container cont1">
+        <div class="logo">
+            <img class="img" src="./logo 2.png" alt="">
+        </div>
+
+        <ul class="main-menu">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT US</a></li>
+            <li><a href="./admission.html">ADMISSION</a></li>
+            <li><a href="./gallary.html">GALLERY</a></li>
+            <li><a href="./noticeboard.html">NOTICE BOARD</a></li>
+            <li><a href="./contact.html">CONTACT US</a></li>
+        </ul>
+    </div>
+</div>
+
+
+<!-- PAGE TITLE -->
+<div class="container mt-4">
+    <h1 class="text-center fw-bold text-primary">📢 Notice Board</h1>
+    <p class="text-center text-muted">
+        Latest updates, announcements & important notifications
+    </p>
+</div>
+
+<!-- NOTICE LIST -->
+<div class="container mt-4">
+
+    <div class="card p-3 mb-3 notice-card">
+        <h5 class="fw-bold">Mid-Term Examination Schedule Announced</h5>
+        <p class="mb-1">
+            Mid-term exams for all departments will start from 15 January 2026.
+            Students are advised to download the date sheet.
+        </p>
+        <span class="notice-date">Posted on: 12 Dec 2025</span>
     </div>
 
-    <!-- Notice List -->
-    <div class="container mt-4">
-
-        <!-- Notice 1 -->
-        <div class="card p-3 mb-3 notice-card">
-            <h5 class="fw-bold">Mid-Term Examination Schedule Announced</h5>
-            <p class="mb-1">Mid-term exams for all departments will start from 15 January 2026. Students are advised to download the date sheet.</p>
-            <span class="notice-date">Posted on: 12 Dec 2025</span>
-        </div>
-
-        <!-- Notice 2 -->
-        <div class="card p-3 mb-3 notice-card">
-            <h5 class="fw-bold">Sports Week Registration Started</h5>
-            <p class="mb-1">Students can register for Cricket, Football, Badminton and Relay Race.</p>
-            <span class="notice-date">Posted on: 10 Dec 2025</span>
-        </div>
-
-        <!-- Notice 3 -->
-        <div class="card p-3 mb-3 notice-card">
-            <h5 class="fw-bold">Library Timings Updated</h5>
-            <p class="mb-1">Library will now remain open from 8 AM to 8 PM including Saturdays.</p>
-            <span class="notice-date">Posted on: 5 Dec 2025</span>
-        </div>
-
-        <!-- Notice 4 -->
-        <div class="card p-3 mb-3 notice-card">
-            <h5 class="fw-bold">New Admissions Open (Spring 2026)</h5>
-            <p class="mb-1">Admissions for BS, BBA, and CS programs are now open. Apply online.</p>
-            <span class="notice-date">Posted on: 1 Dec 2025</span>
-        </div>
-
+    <div class="card p-3 mb-3 notice-card">
+        <h5 class="fw-bold">Sports Week Registration Started</h5>
+        <p class="mb-1">
+            Students can register for Cricket, Football, Badminton and Relay Race.
+        </p>
+        <span class="notice-date">Posted on: 10 Dec 2025</span>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-primary text-white text-center p-3 mt-5">
-        &copy; 2025 Fazaia Degree College Peshawar | All Rights Reserved
-    </footer>
+    <div class="card p-3 mb-3 notice-card">
+        <h5 class="fw-bold">Library Timings Updated</h5>
+        <p class="mb-1">
+            Library will now remain open from 8 AM to 8 PM including Saturdays.
+        </p>
+        <span class="notice-date">Posted on: 5 Dec 2025</span>
+    </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="card p-3 mb-3 notice-card">
+        <h5 class="fw-bold">New Admissions Open (Spring 2026)</h5>
+        <p class="mb-1">
+            Admissions for BS, BBA, and CS programs are now open. Apply online.
+        </p>
+        <span class="notice-date">Posted on: 1 Dec 2025</span>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="bg-primary text-white text-center p-3 mt-5">
+    &copy; 2025 Fazaia Degree College Peshawar | All Rights Reserved
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
